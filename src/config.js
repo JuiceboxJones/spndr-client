@@ -1,4 +1,4 @@
 export default {
-  API_ENDPOINT: 'https://damp-wildwood-10487.herokuapp.com/api',
+  API_ENDPOINT: 'https://fierce-castle-94350.herokuapp.com/api',
   TOKEN_KEY: process.env.TOKEN_KEY,
 }
