@@ -43,16 +43,17 @@ class Income extends Component {
   }
 
   handleNext(e){
-    HistoryHelper.historyGoTo('/expenses', this.props)
+    HistoryHelper.historyGoTo('/wishlist', this.props)
   }
 
   handlePreviousIncome = () => {
     const income = this.state.previousIncome
     if(income === null || income.length < 1){
-      return <div>Let's Get Started! Step 1 of 3</div>
+      return <div>Let's Get Started! Step 2 of 3</div>
     } else{
       const inc = this.state.previousIncome[0]
       return <div>
+        <p>Step 2 of 3</p>
         <p>Previous Income:</p>
         <p>Bank balance: ${inc.bank_balance} Income: ${inc.income} Add to savings: ${inc.add_savings}</p>
         <button type='button' onClick={(e) => this.handleNext(e)}>Use previous income</button>
