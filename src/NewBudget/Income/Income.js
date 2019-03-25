@@ -75,10 +75,13 @@ class Income extends Component {
           <div className="income_section">
             <p>New Income:</p>
             <label htmlFor='user_balance'>Current account balance</label>
+            <p/>
             <input type='number' step='0.01' name='balance' id='balance' />
             <label htmlFor="user_income">Monthly Income</label>
+            <p/>
             <input type='number' step='0.01' required name="income" id="income" />
             <label htmlFor="user_savings">Amount to add to savings</label>
+            <p/>
             <input type='number' step='0.01' required name="savings" id="savings" />
           </div>
           <button type="submit">Create new income</button>

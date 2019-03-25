@@ -1,5 +1,7 @@
 import React, { Component } from 'react'
 import LoginForm from '../LoginForm/LoginForm'
+import Header from '../Header/Header'
+import './login.css'
 
 
 
@@ -20,12 +22,17 @@ export default class LoginPage extends Component {
 
   render() {
     return (
+      <div>
+        <Header />
+      <div className='login_container'>
       <section className='LoginPage'>
         <h2>Login</h2>
         <LoginForm
           onLoginSuccess={this.handleLoginSuccess}
         />
       </section>
+      </div>
+      </div>
     )
   }
 }

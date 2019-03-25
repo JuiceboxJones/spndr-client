@@ -2,6 +2,7 @@ import React, { Component } from 'react';
 import ApiService from '../services/api-fetch-services';
 import TokenService from '../services/token-service';
 import HistoryHelper from '../History/History';
+import Header from '../Header/Header';
 
 //current date without time  new Date().toISOString().slice(0,10)
 
@@ -29,13 +30,15 @@ class Welcome extends Component {
       ApiService.getIncome(),
       ApiService.getWishlist()
     ]).then(data =>
-      this.setState({
+      this.setState(
+        {
           expenses: data[0],
           income: data[1],
           wishlist: data[2]
-        }, () => 
-        this.handleExpensesTotal(this.state.expenses)
-      ));
+        },
+        () => this.handleExpensesTotal(this.state.expenses)
+      )
+    );
   }
 
   //make seperate edit wishlist page
@@ -72,7 +75,7 @@ class Welcome extends Component {
       const subtotal = inc[0].income - inc[0].add_savings;
       const total = subtotal - this.state.expensesTotal;
       const limit = total.toFixed(2);
-        this.setState({ spendLimit: limit });
+      this.setState({ spendLimit: limit });
     }
   }
 
@@ -83,15 +86,15 @@ class Welcome extends Component {
     history.push(destination);
   };
 
-  handleButtonNav(page){
-    HistoryHelper.historyGoTo(page, this.props)
+  handleButtonNav(page) {
+    HistoryHelper.historyGoTo(page, this.props);
   }
 
   render() {
     const handleWishlist = this.state.wishlist.map(wishes => {
       return (
         <li key={wishes.id}>
-          <a href={wishes.url}>{wishes.name}</a> <span>${wishes.price}</span>
+          <a href={wishes.url}>{wishes.name}</a><span/> ${wishes.price}
           <p />
         </li>
       );
@@ -101,9 +104,9 @@ class Welcome extends Component {
       return (
         <li key={exp.id}>
           <p>
-            {exp.name} ${exp.amount} {exp.date_created.slice(0, 10)}{' '}
-            <button type="button" onClick={() => this.handleDelete(exp.id)}>
-              DEL
+             {exp.name}<span />${exp.amount}
+            <button id='delete_expense' type="button" onClick={() => this.handleDelete(exp.id)}>
+            <span id='delete' role="img" aria-label="delete">❌</span>
             </button>{' '}
           </p>
         </li>
@@ -112,29 +115,33 @@ class Welcome extends Component {
 
     return (
       <div>
-        <div>
-          <header>
-            <h1>Welcome!</h1>
-          </header>
+        <header>
+          <Header />
+        </header>
+        <div className="current_limit">
           <h3>
             Currently, your monthly spending budget is: ${this.state.spendLimit}
           </h3>
         </div>
-        <div>
+        <div className="wishlist_window">
           <h3>My Wishlist</h3>
           <ul>{handleWishlist}</ul>
+          <button type="button" id='edit' onClick={() => this.handleButtonNav('/wishlist')}>Edit Wishlist</button>
         </div>
-        <div>
+        <div className="expenses_window">
           <h3>Current Expenses</h3>
-          <span>Name</span> <span>Amount</span> <span>Date Created</span>
           <ul>{handleExpenseList}</ul>
           <h4>Total: ${this.state.expensesTotal}</h4>
         </div>
-        <button type="button" onClick={e => this.handleLogout(e)}>
-          Logout
-        </button>
-        <button type="button" onClick={() => this.handleButtonNav('/income')}>New Budget</button>
-        <button type="button" onClick={() => this.handleButtonNav('/wishlist')}>Edit Wishlist</button>
+        <div className="button_menu">
+          <button type="button" onClick={e => this.handleLogout(e)}>
+            Logout
+          </button>
+          <button type="button" onClick={() => this.handleButtonNav('/income')}>
+            New Budget
+          </button>
+
+        </div>
       </div>
     );
   }

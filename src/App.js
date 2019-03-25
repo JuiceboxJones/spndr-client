@@ -14,6 +14,8 @@ class App extends Component {
   render() {
     return (
       <div className="App">
+        <div id='banner'>
+        <div id='body'>
         <Switch>
           <Route exact path={'/'} component={Home}/>
           <Route exact path={'/login'} component={LoginPage}/>
@@ -24,6 +26,8 @@ class App extends Component {
           <Route exact path={'/expenses'} component={Expenses} />
           <Route exact path={'/wishlist'} component={Wishlist} />
         </Switch>
+        </div>
+        </div>
       </div>
     );
   }

@@ -1,0 +1,85 @@
+.page_container{
+  padding: 5px;
+  height: 100vh;
+  width:100%;
+  margin: 0;
+  border-radius: 15px;
+
+}
+.input_container{
+  padding: 10px;
+  width: 240px;
+  margin: 0 auto;
+  margin-top: 20px;
+  background: whitesmoke;
+  box-shadow: -4px 6px 6px 3px #888888;
+  border-radius: 7px;
+
+}
+.input_container label{
+  font-size: 15px;
+  font-weight: bold;
+}
+.input_container li{
+  border-radius: 2px;
+  background: #dbdada;
+  font-size: 17px;
+  font-weight: bold;
+  color: rgb(209, 0, 0);
+}
+.demo_sum h3{
+  background: #dbdadaad;
+  margin-left: 18%;
+  margin-right: 18%;
+  border-radius: 2px;
+  box-shadow: 0px 0px 6px 3px #A7C4C0;
+}
+.user_buttons button{
+  border: none;
+  background: cadetblue;
+  border-radius: 5px 0px 0px 5px;
+  font-weight: bold;
+  width: 100px;
+  height: 25px;
+  margin: 5px;
+}
+#login{
+  border-radius: 5px 0px 0px 5px;
+  cursor: pointer;
+}
+#login:hover{
+  box-shadow: 0px 0px 6px 3px #024e2e;
+}
+#register{
+  border-radius: 0px 5px 5px 0px;
+  cursor: pointer;
+}
+#register:hover{
+  box-shadow: 0px 0px 6px 3px #024e2e;
+}
+#expense_button{
+  border: none;
+  background: cadetblue;
+  border-radius: 2px;
+  width: 160px;
+  height: 33px;
+  box-shadow: -2px 2px 3px 0px #024e2e;
+  font-weight: bold;
+  cursor: pointer;
+}
+#expense_button:hover{
+  box-shadow: -3px 3px 4px 0px #024e2e;
+}
+#spend_button{
+  border: none;
+  background: cadetblue;
+  border-radius: 2px;
+  width: 160px;
+  height: 33px;
+  box-shadow: -2px 2px 3px 0px #024e2e;
+  font-weight: bold;
+  cursor: pointer;
+}
+#spend_button:hover{ 
+box-shadow: -3px 3px 4px 0px #024e2e;
+}

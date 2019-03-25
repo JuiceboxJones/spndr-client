@@ -1,5 +1,7 @@
 import React, { Component } from 'react';
 import HistoryHelper from '../History/History';
+import './home.css'
+import Header from '../Header/Header';
 
 class Home extends Component {
   static defaultProps = {
@@ -65,25 +67,25 @@ class Home extends Component {
 
     const handleList = this.state.expenses
     .map((exp) => {return <li key={exp.id}>
-    <p><span id='name'>{exp.name}</span>  
-    <span id='amount'>{exp.amount}</span></p>
+    {exp.name}: ${exp.amount}<p/>
     </li>
     })
 
     return (
-      <div>
-        <header>
-          <h1>Welcome to SPNDR</h1>
-        </header>
-        <p>Your personal budgeting app</p>
-        <button type='button' onClick={() => this.handleButton('/login')}>Login</button>
+      <div className='page_container '>
+        <Header />
+        <div className='user_buttons'>
+        <button type='button' id='login' onClick={() => this.handleButton('/login')}>Login</button>
+        <button type='button' id='register' onClick={() => this.handleButton('/register')}>Register</button>
+        </div>
+        <div className='input_container'>
         <form className='demo_expenses' onSubmit={(e) => this.handleAddExpense(e)}>
           <div className="demo_monthly_expenses">
             <label htmlFor="demo_expense_name">Expense name</label>
-            <input type='text' required name="name" id="demo_name" />
+            <input type='text' required name="name" id="demo_name" placeholder='e.g. "Rent"' />
             <label htmlFor="demo_expense_amount">Amount</label>
-            <input type='number' required name="amount" id="demo_amount" />
-            <button type='submit'>Add Expense</button>
+            <input type='number' required name="amount" id="demo_amount" placeholder='$1500.00' />
+            <button type='submit' id='expense_button'>Add Expense</button>
             <ul>
              {handleList}
             </ul>
@@ -92,15 +94,17 @@ class Home extends Component {
         <form className="demo_income" onSubmit={(e) => this.handleSubmitDemo(e)}>
           <div className="income_section">
             <label htmlFor="demoPage_income">Monthly Income</label>
-            <input type='number' required name="income" id="demo_income" />
+            <input type='number' required name="income" id="demo_income" placeholder='$4000.00' />
             <label htmlFor="demoPage_savings">Amount to add to savings</label>
-            <input type='number' required name="savings" id="demo_savings" />
+            <input type='number' required name="savings" id="demo_savings" placeholder='$150.00' />
           </div>
-          <button type="submit" >How much can I spend</button>
+          <button type="submit" id='spend_button'>How much can I spend</button>
           </form>
+          <div className='demo_sum'>
           <p>Monthly Allowance: </p><h3>${this.state.spendLimit}</h3>
-        <h3>Register to save your information and access extended features</h3>
-        <button type='button' onClick={() => this.handleButton('/register')}>Register</button>
+          </div>
+          </div>
+        <h3>Login or register to save your information and access extended features</h3>
       </div>
     );
   }
