@@ -137,7 +137,7 @@ class Welcome extends Component {
           <button type="button" onClick={e => this.handleLogout(e)}>
             Logout
           </button>
-          <button type="button" onClick={() => this.handleButtonNav('/expenses')}>
+          <button type="button" onClick={() => this.handleButtonNav('/income')}>
             New Budget
           </button>
 

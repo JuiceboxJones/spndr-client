@@ -44,7 +44,7 @@ componentDidMount(){
   }
 
   handleNext(){
-    HistoryHelper.historyGoTo('/income', this.props)
+    HistoryHelper.historyGoTo('/wishlist', this.props)
   }
   handleBack(){
     HistoryHelper.historyGoBack(this.props)
@@ -63,7 +63,7 @@ componentDidMount(){
       <div className='expensesContainer'>
       <header>
         <h2>Add Expenses</h2>
-        <p>Step 1 of 3</p>
+        <p>Step 2 of 3</p>
       </header>
         <form
         className="current_expenses"
