@@ -54,10 +54,11 @@ class Income extends Component {
     } else{
       const inc = this.state.previousIncome[0]
       return <div>
-        <p>Step 2 of 3</p>
         <h2>Previous Income:</h2>
-        <p>Bank balance: ${inc.bank_balance} Income: ${inc.income} Add to savings: ${inc.add_savings}</p>
+        <div className='prev_income_display'>
+        <p>Bank balance: ${inc.bank_balance} <p/> Income: ${inc.income} <p/> Add to savings: ${inc.add_savings}</p>
         <button type='button' id='income_buttons' onClick={(e) => this.handleNext(e)}>Use previous income</button>
+      </div>
       </div>
     }
   }
@@ -69,12 +70,13 @@ class Income extends Component {
       <div className='income_page_container'>
         <header id='header'>
           <h2>Add Income</h2>
+          <p>Step 2 of 3</p>
         </header>
+          <div className='form_box'>
           <div className='previous_income'>
           {this.handlePreviousIncome()}
           </div>
-          <div className='form_box'>
-      <form className="income" onSubmit={(e) => this.handleSubmitIncome(e)}>
+        <form className="income" onSubmit={(e) => this.handleSubmitIncome(e)}>
           <div className="income_section">
             <h2>New Income:</h2>
             <label htmlFor='user_balance'>Current account balance</label>

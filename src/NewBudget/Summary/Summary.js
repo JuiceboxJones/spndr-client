@@ -94,13 +94,14 @@ class Summary extends Component {
 
     return (  
           <div className='summaryContainer'>
-          <header>
+          <header id='header'>
             <h2>Your Budget Summary</h2>
           </header>
            <div className='projectedBalance'>
             <h4>Your projected account balance minus savings and expenses is: </h4>
               <h2>${this.state.accountBal}</h2>
            </div>
+           <div className='userInfo'>
            <div className='userIncome'>
             <h4>Your income: </h4>
               {handleIncomeReadOut}
@@ -113,7 +114,8 @@ class Summary extends Component {
             <h4>When can I buy items on my wishlist:</h4> 
               {handleWishlist}
            </div>
-            <button type='button' onClick={(e) => this.handleDone(e)}>Done</button>
+           </div>
+           <button type='button' id='done' onClick={(e) => this.handleDone(e)}>Done</button>
           </div>
     );
   }

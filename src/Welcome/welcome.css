@@ -5,7 +5,7 @@
   background: #f5f5f5;
   padding: 10px;
   float: right;
-  height: 350px;
+  height: 50%;
   position: relative;
   margin-right: 10%;
 }
@@ -64,9 +64,8 @@
 }
 
 #edit{
-  position: absolute;
-  bottom: 20px;
-  left: 37%;
+  position: relative;
+  margin: 0 auto;
   border: none;
   width: 150px;
   height: 25px;
@@ -98,7 +97,7 @@
   background: #f5f5f5;
   padding: 10px;
   float: left;
-  height: 350px;
+  height: 50%;
   margin-left: 10%;
 }
 

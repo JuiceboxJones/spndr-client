@@ -1,6 +1,7 @@
 import React, { Component } from 'react';
 import ApiService from '../../services/api-fetch-services';
 import HistoryHelper from '../../History/History'
+import './wishlist.css'
 
 class Wishlist extends Component {
   static defaultProps = {
@@ -106,8 +107,8 @@ class Wishlist extends Component {
         </div>
         <div className='list_container'>
           <ul>{handleList}</ul>
+          {this.handleButtonRender()}
         </div>
-        {this.handleButtonRender()}
       </div>
     );
   }
