@@ -3,6 +3,7 @@ import ApiService from '../services/api-fetch-services';
 import TokenService from '../services/token-service';
 import HistoryHelper from '../History/History';
 import Header from '../Header/Header';
+import './welcome.css'
 
 //current date without time  new Date().toISOString().slice(0,10)
 
@@ -120,8 +121,12 @@ class Welcome extends Component {
         </header>
         <div className="current_limit">
           <h3>
-            Currently, your monthly spending budget is: ${this.state.spendLimit}
+            Currently, your monthly spending budget is: 
+            <p/>${this.state.spendLimit}
           </h3>
+          <button type="button" id='new_budget_button' onClick={() => this.handleButtonNav('/income')}>
+            New Budget
+          </button>
         </div>
         <div className="wishlist_window">
           <h3>My Wishlist</h3>
@@ -131,16 +136,12 @@ class Welcome extends Component {
         <div className="expenses_window">
           <h3>Current Expenses</h3>
           <ul>{handleExpenseList}</ul>
-          <h4>Total: ${this.state.expensesTotal}</h4>
+          <h4>Total: <span id='red_total'>${this.state.expensesTotal}</span></h4>
         </div>
         <div className="button_menu">
-          <button type="button" onClick={e => this.handleLogout(e)}>
+          <button type="button" id='logout_button' onClick={e => this.handleLogout(e)}>
             Logout
           </button>
-          <button type="button" onClick={() => this.handleButtonNav('/income')}>
-            New Budget
-          </button>
-
         </div>
       </div>
     );

@@ -10,7 +10,9 @@
     text-align: center;
     margin: 0;
 }
-
+li a{
+  text-decoration: none;
+}
 
 ul{
   list-style-type: none;
@@ -79,100 +81,51 @@ body{
   
 }
 
-/* for welcome page */
+/* for wishlist page */
 
-.wishlist_window{
-  width: 33%;
+.wishlist_page_container{
+  padding: 15px;
+}
+.wishlist_input_container{
+width: 150px;
+position: relative;
+margin: 0 auto;
+margin-bottom: 25px;
+}
+.wishlist_form_container{
+  margin: 0 auto;
+  width: 25%;
   margin-top: 5%;
-  border-radius: 8px;
+  border-radius: 8px 8px 0 0;
   background: #f5f5f5;
-  padding: 10px;
-  float: right;
-  height: 350px;
+  padding: 20px 20px 0 20px;
+  height: 250px;
+}
+
+.add_wishlist{
+margin: 25px;
+}
+.list_container{
   position: relative;
-  margin-right: 10%;
-}
-
-.wishlist_window li{
-  border-radius: 2px;
-  background: #dbdada;
-  font-size: 17px;
-  font-weight: bold;
-}
-
-.wishlist_window li span{
-  margin-left: 20px;
-}
-
-.button_menu{
-  position: relative;
-  bottom: -500px;
-}
-
-#edit{
-  position: absolute;
-  bottom: 20px;
-  left: 37%;
-  border: none;
-  width: 150px;
-  height: 25px;
-  border-radius: 5px;
-  background:#A7C4C0;
-  cursor: pointer;
-}
-#edit:hover{ 
-  background: #024e2e9c;
-  }
-
-
-
-.expenses_window{
-  width: 33%;
-  margin-top: 5%;
-  border-radius: 8px;
+  margin: 0 auto;
+  border-radius: 0 0 8px 8px;
   background: #f5f5f5;
-  padding: 10px;
-  float: left;
-  height: 350px;
-  margin-left: 10%;
+  padding: 20px;
+  width: 25%;
 }
 
-.expenses_window li{
+.list_container li{
   border-radius: 2px;
   background: #dbdada;
   font-size: 17px;
   height: 25px;
   font-weight: bold;
-  color: rgb(209, 0, 0);
+  padding: 1px;
+  margin-bottom: 10px;
 }
-
-.expenses_window li span{
-  margin-left: 20px;
-
+.list_container ul{
+  margin-top: 0;
 }
-
-
-.expenses_window p {
-  text-align: center;
-  margin-left: 15%;
-}
-
-#delete_expense{
-  float: right;
-  margin-right: 20px;
-  margin-top: 2px;
-  border: none;
-  background: none;
-  cursor: pointer;
-}
-#delete_expense:hover{
-  font-size: 105%;
-  text-shadow: 7px -3px 3px rgba(0, 0, 0, 0.644);
-}
-
-
-  
-
 
 
 

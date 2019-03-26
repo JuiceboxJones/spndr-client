@@ -1,6 +1,7 @@
 import React, { Component } from 'react';
 import ApiService from '../../services/api-fetch-services';
 import HistoryHelper from '../../History/History';
+import './income.css'
 
 
 class Income extends Component {
@@ -54,9 +55,9 @@ class Income extends Component {
       const inc = this.state.previousIncome[0]
       return <div>
         <p>Step 2 of 3</p>
-        <p>Previous Income:</p>
+        <h2>Previous Income:</h2>
         <p>Bank balance: ${inc.bank_balance} Income: ${inc.income} Add to savings: ${inc.add_savings}</p>
-        <button type='button' onClick={(e) => this.handleNext(e)}>Use previous income</button>
+        <button type='button' id='income_buttons' onClick={(e) => this.handleNext(e)}>Use previous income</button>
       </div>
     }
   }
@@ -65,16 +66,17 @@ class Income extends Component {
 
 
     return ( 
-      <div>
-        <header>
+      <div className='income_page_container'>
+        <header id='header'>
           <h2>Add Income</h2>
         </header>
-          <div>
+          <div className='previous_income'>
           {this.handlePreviousIncome()}
           </div>
+          <div className='form_box'>
       <form className="income" onSubmit={(e) => this.handleSubmitIncome(e)}>
           <div className="income_section">
-            <p>New Income:</p>
+            <h2>New Income:</h2>
             <label htmlFor='user_balance'>Current account balance</label>
             <p/>
             <input type='number' step='0.01' name='balance' id='balance' />
@@ -85,8 +87,9 @@ class Income extends Component {
             <p/>
             <input type='number' step='0.01' required name="savings" id="savings" />
           </div>
-          <button type="submit">Create new income</button>
+          <button type="submit" id='income_buttons'>Create new income</button>
           </form>
+          </div>
           </div>
      );
   }

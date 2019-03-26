@@ -1,6 +1,7 @@
 import React, { Component } from 'react';
 import ApiService from '../../services/api-fetch-services';
 import HistoryHelper from '../../History/History';
+import './expenses.css'
 
 class Expenses extends Component {
   static defaultProps = {
@@ -55,31 +56,35 @@ componentDidMount(){
     const handleList = this.state.expenses
     .map((exp, index) => {
       return <li key={exp.id || index }>
-      <p>{exp.name} ${exp.amount} <button type='button' onClick={() => this.handleDelete(exp.id)}>DEL</button> </p>
+      {exp.name} <span/> ${exp.amount} <button type='button' id='delete' onClick={() => this.handleDelete(exp.id)}>
+      <span id='delete' role="img" aria-label="delete">❌</span></button>
       </li>
     })
 
     return (
       <div className='expensesContainer'>
-      <header>
+      <header id='header'>
         <h2>Add Expenses</h2>
         <p>Step 2 of 3</p>
       </header>
-        <form
-        className="current_expenses"
-        onSubmit={e => this.handleAddExpense(e)}
-      >
+      <div className='form_container'>
+        <form className="current_expenses" onSubmit={e => this.handleAddExpense(e)}>
         <div className="current_monthly_expenses">
           <label htmlFor="current_expense_name">Expense name</label>
           <input type="text" required name="name" id="current_name" />
           <label htmlFor="current_expense_amount">Amount</label>
           <input type="number" step='0.01' required name="amount" id="current_amount" />
-          <button type="submit">Add Expense</button>
-          <ul>{handleList}</ul>
+          <button id='add_expense' type="submit">Add Expense</button>
         </div>
-        <button type='button' onClick={(e) => this.handleBack(e)}>Back</button>
-        <button type="button" onClick={(e) => this.handleNext(e)}>Next</button>
+        <div className='expense_list'>
+        <ul>{handleList}</ul>
+        </div>
+        <div className='button_container'>
+        <button type='button' id='back_button' onClick={(e) => this.handleBack(e)}>Back</button>
+        <button type="button" id='next_button' onClick={(e) => this.handleNext(e)}>Next</button>
+        </div>
       </form>
+      </div>
       </div>
 
     );

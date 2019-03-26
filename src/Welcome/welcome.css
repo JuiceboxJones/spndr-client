@@ -1,0 +1,136 @@
+.wishlist_window{
+  width: 33%;
+  margin-top: 5%;
+  border-radius: 8px;
+  background: #f5f5f5;
+  padding: 10px;
+  float: right;
+  height: 350px;
+  position: relative;
+  margin-right: 10%;
+}
+
+.wishlist_window li{
+  border-radius: 2px;
+  background: #dbdada;
+  font-size: 17px;
+  font-weight: bold;
+}
+
+.wishlist_window li span{
+  margin-left: 20px;
+}
+
+#logout_button{
+  margin: 5px;
+  position: absolute;
+  top: 20px;
+  right: 25px;
+  border: none;
+  width: 150px;
+  height: 25px;
+  border-radius: 5px;
+  background: #024e2e9c;
+  color: white;
+  cursor: pointer;
+  font-weight: bold;
+}
+
+#red_total{
+  color: rgb(209, 0, 0);
+}
+
+#logout_button:hover{
+  background: rgb(122, 155, 143);
+  color: rgb(209, 0, 0);
+}
+
+
+#new_budget_button{
+  margin: 15px;
+  left: 37%;
+  border: none;
+  width: 150px;
+  height: 25px;
+  border-radius: 5px;
+  background:#A7C4C0;
+  cursor: pointer;
+  font-weight: bold;
+}
+
+#new_budget_button:hover{
+  background: #024e2e9c;
+  color:white;
+}
+
+#edit{
+  position: absolute;
+  bottom: 20px;
+  left: 37%;
+  border: none;
+  width: 150px;
+  height: 25px;
+  border-radius: 5px;
+  background:#A7C4C0;
+  cursor: pointer;
+  font-weight: bold;
+}
+#edit:hover{ 
+  background: #024e2e9c;
+  color:white;
+  }
+
+.current_limit{
+  width: 33%;
+  margin-top: 5%;
+  border-radius: 8px;
+  background: #f5f5f5;
+  padding: 10px;
+  float: left;
+  height: 150px;
+  margin-left: 33%;
+}
+
+.expenses_window{
+  width: 33%;
+  margin-top: 5%;
+  border-radius: 8px;
+  background: #f5f5f5;
+  padding: 10px;
+  float: left;
+  height: 350px;
+  margin-left: 10%;
+}
+
+.expenses_window li{
+  border-radius: 2px;
+  background: #dbdada;
+  font-size: 17px;
+  height: 25px;
+  font-weight: bold;
+  color: rgb(209, 0, 0);
+}
+
+.expenses_window li span{
+  margin-left: 20px;
+
+}
+
+
+.expenses_window p {
+  text-align: center;
+  margin-left: 15%;
+}
+
+#delete_expense{
+  float: right;
+  margin-right: 20px;
+  margin-top: 2px;
+  border: none;
+  background: none;
+  cursor: pointer;
+}
+#delete_expense:hover{
+  font-size: 105%;
+  text-shadow: 7px -3px 3px rgba(0, 0, 0, 0.644);
+}
