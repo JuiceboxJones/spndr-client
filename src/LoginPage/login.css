@@ -33,3 +33,18 @@
 #login_form_button:hover{
   background: #68808B;
 }
+
+@media screen and (max-width: 480px) {
+
+  .login_container{
+    width: 90%;
+    margin-top: 25%;
+  }
+
+}
+
+@media screen and (max-width: 330px){
+  .login_container form{
+    width: 90%;
+  }
+}

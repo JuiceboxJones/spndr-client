@@ -1,0 +1,57 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`renders correctly 1`] = `
+<div
+  className="summaryContainer"
+>
+  <header
+    id="header"
+  >
+    <h2>
+      Your Budget Summary
+    </h2>
+  </header>
+  <div
+    className="projectedBalance"
+  >
+    <h4>
+      Your projected account balance minus savings and expenses is: 
+    </h4>
+    <h2>
+      $
+    </h2>
+  </div>
+  <div
+    className="userInfo"
+  >
+    <div
+      className="userIncome"
+    >
+      <h4>
+        Your income: 
+      </h4>
+    </div>
+    <div
+      className="userExpenses"
+    >
+      <h4>
+        Monthly expenses: 
+      </h4>
+    </div>
+    <div
+      className="userWishlist"
+    >
+      <h4>
+        When can I buy items on my wishlist:
+      </h4>
+    </div>
+  </div>
+  <button
+    id="done"
+    onClick={[Function]}
+    type="button"
+  >
+    Done
+  </button>
+</div>
+`;

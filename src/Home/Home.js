@@ -78,6 +78,28 @@ class Home extends Component {
         <button type='button' id='login' onClick={() => this.handleButton('/login')}>Login</button>
         <button type='button' id='register' onClick={() => this.handleButton('/register')}>Register</button>
         </div>
+        <div className='content_container'>
+        <div className='user_instructions'>
+          <header id='instructions_heading'>
+          <p>How to use:</p>
+          </header>
+          <section id='expense_instructions'>
+          <p>First, lets add up your bills and other expenses by entering them into the expenses field and clicking "Add expense".
+          This will add your expense to a list. Once you have entered all your expenses, 
+          move to the income portion of this application</p>
+          </section>
+          <section id='income_instructions'>
+          <p>Second, add your monthly income in the income field. Both fields are required.
+            Once you have completed this portion, click the "How much can I spend?" button 
+            to calculate the money you will have left for the current month after bills.</p>
+          </section>
+          <section id='extended features'>
+          <p>The extended features of this app allow you to save your expenses and add items to a wishlist.
+            This app can give you an estimate to when you will be able to purchase the items on your wishlist
+            after completing the new budget creation process. These features are only available for registered users.
+          </p>
+          </section>
+          </div>
         <div className='input_container'>
         <form className='demo_expenses' onSubmit={(e) => this.handleAddExpense(e)}>
           <div className="demo_monthly_expenses">
@@ -102,6 +124,7 @@ class Home extends Component {
           </form>
           <div className='demo_sum'>
           <p>Monthly Allowance: </p><h3>${this.state.spendLimit}</h3>
+          </div>
           </div>
           </div>
         <h3>Login or register to save your information and access extended features</h3>

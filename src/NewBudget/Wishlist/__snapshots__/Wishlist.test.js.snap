@@ -1,0 +1,90 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`renders correctly 1`] = `
+<div
+  className="wishlist_page_container"
+>
+  <header
+    id="header"
+  >
+    <h2>
+      Make a Wishlist
+    </h2>
+    <p>
+      Step 3 of 3
+    </p>
+  </header>
+  <div
+    className="wishlist_form_container"
+  >
+    <form
+      className="wishlist_form"
+      onSubmit={[Function]}
+    >
+      <div
+        className="wishlist_input_container"
+      >
+        <label
+          htmlFor=""
+        >
+          Item:
+        </label>
+        <input
+          id="item_name"
+          name="item_name"
+          placeholder="e.g. 'New Car'"
+          required={true}
+          type="text"
+        />
+        <label
+          htmlFor=""
+        >
+          URL:
+        </label>
+        <input
+          id="item_url"
+          name="item_url"
+          placeholder="www.buyItHere.com"
+          required={true}
+          type="text"
+        />
+        <label
+          htmlFor=""
+        >
+          Price:
+        </label>
+        <input
+          id="item_price"
+          name="item_price"
+          placeholder="100.00"
+          required={true}
+          step="0.01"
+          type="number"
+        />
+        <button
+          id="add_wishlist"
+          type="submit"
+        >
+          Add to Wishlist
+        </button>
+      </div>
+    </form>
+  </div>
+  <div
+    className="list_container"
+  >
+    <ul />
+    <div
+      className="nextButton"
+    >
+      <button
+        id="home_button"
+        onClick={[Function]}
+        type="button"
+      >
+        Home
+      </button>
+    </div>
+  </div>
+</div>
+`;

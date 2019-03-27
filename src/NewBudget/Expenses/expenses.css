@@ -105,3 +105,26 @@
 span{
   margin-left: 10px;
 }
+
+@media screen and (max-width: 480px) {
+  .form_container{
+    width: 100%;
+  }
+
+  .button_container{
+    width: 100%;
+  }
+
+  #delete{
+    margin-right: 8px;
+  }
+
+  .current_monthly_expenses{
+    width: 50%;
+  }
+
+  #add_expense{
+    margin-top: 13px;
+    margin: 0 auto;
+  }
+}

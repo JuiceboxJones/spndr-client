@@ -1,0 +1,153 @@
+.projectedBalance{
+  width: 33%;
+  margin-top: 5%;
+  border-radius: 8px;
+  background: #f5f5f5;
+  padding: 10px;
+  height: 150px;
+  margin-left: 33%;
+}
+.userIncome{
+  width: 33%;
+  margin:10px;
+  border-radius: 8px;
+  background: #f5f5f5;
+  padding: 10px;
+  height: 350px;
+  display: table-cell;
+}
+.userIncome p{
+  border-radius: 2px;
+  background: #dbdada;
+  font-size: 17px;
+  height: 25px;
+  font-weight: bold;
+  padding: 1px;
+  margin-bottom: 10px;
+}
+.userExpenses{
+  width: 33%;
+  margin:10%;
+  border-radius: 8px;
+  background: #f5f5f5;
+  padding: 10px;
+  height: 350px;
+  display: table-cell;  
+}
+
+.userExpenses li{
+  border-radius: 2px;
+  background: #dbdada;
+  font-size: 17px;
+  height: 25px;
+  font-weight: bold;
+  padding: 1px;
+  margin-bottom: 10px;
+}
+.userWishlist{
+  width: 33%;
+  margin:10%;
+  border-radius: 8px;
+  background: #f5f5f5;
+  padding: 10px;
+  height: 350px;
+  display: table-cell;
+}
+
+.userWishlist li {
+  border-radius: 2px;
+  background: #dbdada;
+  font-size: 17px;
+  height: 25px;
+  font-weight: bold;
+  padding: 1px;
+  margin-bottom: 10px;
+}
+
+.userInfo{
+  display: table;
+  padding: 5px;
+  margin: 0 auto;
+  width: 100%;
+  table-layout: fixed;
+  border-spacing: 60px;
+}
+
+.summaryContainer{
+  padding: 15px;
+  padding-bottom: 0px;
+}
+#done{
+  border: none;
+  width: 250px;
+  height: 50px;
+  border-radius: 5px;
+  background: #A7C4C0;
+  cursor: pointer;
+  font-weight: bold;
+  font-size: 34px;
+  margin: 10px;
+}
+
+#done:hover{
+  background: #024e2e9c;
+  color:white;
+}
+
+.projectedBalance h2{
+  color: rgb(78, 158, 78);
+  font-weight: bolder;
+}
+
+@media screen and (max-width: 480px) {
+
+.projectedBalance{
+  width: 90%;
+  margin: 0 auto;
+  height: 115px;
+  margin-bottom: 0;
+}
+  .userInfo{
+    display: unset;
+    table-layout: unset;
+    padding: 0;
+  }
+  .userExpenses{
+    display: inline-block;
+    width: 90%;
+    margin: 0 auto;
+    height: 50%;
+    margin-top: 5px;
+    
+  }
+  .userIncome{
+    display: inline-block;
+    width: 90%;
+    margin: 0 auto;
+    height: 50%;
+    margin-top: 5px;
+    
+  }
+  .userWishlist{
+    display: inline-block;
+    width: 90%;
+    margin: 0 auto;
+    height: 50%;
+    margin-top: 5px;
+    
+  }
+  .summaryContainer{
+    padding: 10px 0 0 0;
+  }
+  .userExpenses li{
+   font-size: 14px; 
+  }
+  .userIncome p{
+   font-size: 14px; 
+  }
+  .userWishlist li{
+  font-size: 14px;     
+  }
+
+
+}

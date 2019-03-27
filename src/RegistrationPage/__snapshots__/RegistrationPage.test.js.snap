@@ -1,0 +1,87 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`renders correctly 1`] = `
+<div>
+  <div
+    className="header"
+  >
+    <header>
+      <h1>
+        Welcome to SPNDR
+      </h1>
+    </header>
+    <p>
+      Finance Management. Simplified.
+    </p>
+  </div>
+  <div
+    className="registration_container"
+  >
+    <section
+      className="RegistrationPage"
+    >
+      <h2>
+        Register
+      </h2>
+      <form
+        className="RegistrationForm"
+        onSubmit={[Function]}
+      >
+        <div
+          role="alert"
+        />
+        <div
+          className="full_name"
+        >
+          <label
+            htmlFor="RegistrationForm__full_name"
+          >
+            Full name
+          </label>
+          <input
+            id="RegistrationForm__full_name"
+            name="full_name"
+            required={true}
+            type="text"
+          />
+        </div>
+        <div
+          className="user_name"
+        >
+          <label
+            htmlFor="RegistrationForm__user_name"
+          >
+            User name
+          </label>
+          <input
+            id="RegistrationForm__user_name"
+            name="user_name"
+            required={true}
+            type="text"
+          />
+        </div>
+        <div
+          className="password"
+        >
+          <label
+            htmlFor="RegistrationForm__password"
+          >
+            Password
+          </label>
+          <input
+            id="RegistrationForm__password"
+            name="password"
+            required={true}
+            type="password"
+          />
+        </div>
+        <button
+          type="submit"
+        >
+          Register
+        </button>
+      </form>
+    </section>
+  </div>
+</div>
+`;

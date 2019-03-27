@@ -133,3 +133,75 @@
   font-size: 105%;
   text-shadow: 7px -3px 3px rgba(0, 0, 0, 0.644);
 }
+
+@media screen and (max-width: 480px) {
+  .current_limit {
+    width: 50%;
+    margin-left: 25%;
+    height: 130px;
+    margin-bottom: 18px;
+  }
+  #new_budget_button{
+    margin: 3px;
+  }
+  .expenses_window{
+    margin-left: 2%;
+    width: 42%;
+    padding: 8px;
+  }
+  .wishlist_window{
+    margin-right: 2%;
+    width: 42%;
+  } 
+  .expenses_window p{
+    font-size: 14px;
+    margin-left: 2px;
+  }
+  .expenses_window li span{
+    margin-left: 5px;
+  }
+  #delete{
+    margin-right: 0px;
+    margin-top: -1px;
+  }
+  #delete_expense{
+    margin-right: 8px;
+  }
+  h3{
+    font-size: 15px;
+  }
+  #logout_button{
+    top: 90px;
+    right: 86px;
+  }
+  .wishlist_window li{
+    font-size: 15px;
+  }
+  .wishlist_window li span{
+    margin-left: 4px;
+  }
+}
+
+@media screen and (max-width: 320px) {
+
+  .current_limit{
+    margin-left: 21%;
+  }
+  .current_limit h3{
+    margin: 5px;
+  }
+}
+
+@media screen and (max-width: 330px){
+  .current_limit{
+    margin-top: 19px;
+  }
+  #edit{
+    width: 135px;
+  }
+  #delete_expense{
+    margin-right: -8px;
+    margin-top: 0px;
+  }
+}
+

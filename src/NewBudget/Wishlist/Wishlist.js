@@ -76,7 +76,8 @@ class Wishlist extends Component {
     const handleList = this.state.wishlist.map((item, index) => {
       return (
         <li key={item.id || index }>
-          <a href={item.url}>{item.name}</a> <span id='wishlist_spacing'/>${item.price} <button type='button' onClick={() => this.handleDelete(item.id)}>️	DEL</button>
+          <a href={item.url}>{item.name}</a> <span id='wishlist_spacing'/>${item.price} <button type='button' id='delete' onClick={() => this.handleDelete(item.id)}>️
+          <span id='delete' role="img" aria-label="delete">❌</span></button>
           <p />
         </li>
       );

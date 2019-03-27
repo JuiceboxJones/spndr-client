@@ -1,0 +1,78 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`renders correctly 1`] = `
+<div>
+  <header>
+    <div
+      className="header"
+    >
+      <header>
+        <h1>
+          Welcome to SPNDR
+        </h1>
+      </header>
+      <p>
+        Finance Management. Simplified.
+      </p>
+    </div>
+  </header>
+  <div
+    className="current_limit"
+  >
+    <h3>
+      Currently, your monthly spending budget is:
+      <p />
+      $
+    </h3>
+    <button
+      id="new_budget_button"
+      onClick={[Function]}
+      type="button"
+    >
+      New Budget
+    </button>
+  </div>
+  <div
+    className="wishlist_window"
+  >
+    <h3>
+      My Wishlist
+    </h3>
+    <ul />
+    <button
+      id="edit"
+      onClick={[Function]}
+      type="button"
+    >
+      Edit Wishlist
+    </button>
+  </div>
+  <div
+    className="expenses_window"
+  >
+    <h3>
+      Current Expenses
+    </h3>
+    <ul />
+    <h4>
+      Total: 
+      <span
+        id="red_total"
+      >
+        $
+      </span>
+    </h4>
+  </div>
+  <div
+    className="button_menu"
+  >
+    <button
+      id="logout_button"
+      onClick={[Function]}
+      type="button"
+    >
+      Logout
+    </button>
+  </div>
+</div>
+`;

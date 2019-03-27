@@ -42,15 +42,15 @@ class Welcome extends Component {
     );
   }
 
-  //make seperate edit wishlist page
-  //when no items in wishlist say 'no items in wishlist'
+
   handleExpensesTotal(exp) {
     if (exp.length !== 0) {
       const newArr = [];
       for (let i = 0; i < exp.length; i++) {
         newArr.push(Number(exp[i].amount));
       }
-      const sum = newArr.reduce((a, b) => a + b);
+      const presum = newArr.reduce((a, b) => a + b);
+      const sum = presum.toFixed(2)
       this.setState({ expensesTotal: sum }, () =>
         this.handleIncome(this.state.income)
       );

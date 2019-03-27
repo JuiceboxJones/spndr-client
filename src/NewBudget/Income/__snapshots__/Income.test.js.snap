@@ -1,0 +1,85 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`renders correctly 1`] = `
+<div
+  className="income_page_container"
+>
+  <header
+    id="header"
+  >
+    <h2>
+      Add Income
+    </h2>
+    <p>
+      Step 2 of 3
+    </p>
+  </header>
+  <div
+    className="form_box"
+  >
+    <div
+      className="previous_income"
+    >
+      <div>
+        Let's Get Started! Step 1 of 3
+      </div>
+    </div>
+    <form
+      className="income"
+      onSubmit={[Function]}
+    >
+      <div
+        className="income_section"
+      >
+        <h2>
+          New Income:
+        </h2>
+        <label
+          htmlFor="user_balance"
+        >
+          Current account balance
+        </label>
+        <p />
+        <input
+          id="balance"
+          name="balance"
+          step="0.01"
+          type="number"
+        />
+        <label
+          htmlFor="user_income"
+        >
+          Monthly Income
+        </label>
+        <p />
+        <input
+          id="income"
+          name="income"
+          required={true}
+          step="0.01"
+          type="number"
+        />
+        <label
+          htmlFor="user_savings"
+        >
+          Amount to add to savings
+        </label>
+        <p />
+        <input
+          id="savings"
+          name="savings"
+          required={true}
+          step="0.01"
+          type="number"
+        />
+      </div>
+      <button
+        id="income_buttons"
+        type="submit"
+      >
+        Create new income
+      </button>
+    </form>
+  </div>
+</div>
+`;

@@ -46,3 +46,39 @@
   background: #024e2e9c;
   color:white;
 }
+@media screen and (max-width: 480px) {
+  .form_box{
+    width: 80%;
+  }
+  h2{
+    font-size: 15px;
+  }
+  #income_buttons{
+    margin-bottom: 0;
+    margin-top: 10px;
+  }
+  input{
+    margin: 0;
+    margin-bottom: 5px;
+  }
+  .income_page_container{
+    height: 153%;
+  }
+  .income h2{
+    margin-bottom: 23px;
+
+  }
+}
+@media screen and (max-width: 330px) {
+.income_page_container{
+  height: 100vh;
+  padding: 0;
+}
+.form_box{
+  height: 90%;
+}
+#income_buttons{
+  margin-bottom: -5px;
+  margin-top: 7px;
+}
+}

@@ -1,0 +1,83 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`renders correctly 1`] = `
+<div
+  className="expensesContainer"
+>
+  <header
+    id="header"
+  >
+    <h2>
+      Add Expenses
+    </h2>
+    <p>
+      Step 2 of 3
+    </p>
+  </header>
+  <div
+    className="form_container"
+  >
+    <form
+      className="current_expenses"
+      onSubmit={[Function]}
+    >
+      <div
+        className="current_monthly_expenses"
+      >
+        <label
+          htmlFor="current_expense_name"
+        >
+          Expense name
+        </label>
+        <input
+          id="current_name"
+          name="name"
+          required={true}
+          type="text"
+        />
+        <label
+          htmlFor="current_expense_amount"
+        >
+          Amount
+        </label>
+        <input
+          id="current_amount"
+          name="amount"
+          required={true}
+          step="0.01"
+          type="number"
+        />
+        <button
+          id="add_expense"
+          type="submit"
+        >
+          Add Expense
+        </button>
+      </div>
+      <div
+        className="expense_list"
+      >
+        <ul />
+      </div>
+      <div
+        className="button_container"
+      >
+        <button
+          id="back_button"
+          onClick={[Function]}
+          type="button"
+        >
+          Back
+        </button>
+        <button
+          id="next_button"
+          onClick={[Function]}
+          type="button"
+        >
+          Next
+        </button>
+      </div>
+    </form>
+  </div>
+</div>
+`;

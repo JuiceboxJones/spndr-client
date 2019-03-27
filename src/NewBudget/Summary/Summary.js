@@ -1,6 +1,7 @@
 import React, { Component } from 'react';
 import ApiService from '../../services/api-fetch-services';
 import HistoryHelper from '../../History/History'
+import './summary.css'
 
 class Summary extends Component {
   static defaultProps = {
@@ -44,7 +45,7 @@ class Summary extends Component {
     handleCurrentAccountBal(){
       const inc = this.state.income[0]
       const subBal =  (Number(inc.bank_balance )+ Number(inc.income) - Number(inc.add_savings))
-      const accountBal = subBal - this.state.expenseTotal
+      const accountBal = (subBal - this.state.expenseTotal).toFixed(2)
       this.setState({accountBal}, () => this.handleWishlistPurchase())
     }
 

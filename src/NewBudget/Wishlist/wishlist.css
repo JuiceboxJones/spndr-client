@@ -2,7 +2,7 @@
   padding: 15px;
 }
 .wishlist_input_container{
-width: 150px;
+width: 50%;
 position: relative;
 margin: 0 auto;
 margin-bottom: 25px;
@@ -17,8 +17,19 @@ margin-bottom: 25px;
   height: 50%;
 }
 
-.add_wishlist{
-margin: 25px;
+#add_wishlist{
+  border: none;
+  width: 150px;
+  height: 25px;
+  border-radius: 5px;
+  background:#A7C4C0;
+  cursor: pointer;
+  font-weight: bold;
+  margin: 20px;
+}
+#add_wishlist:hover{
+  background: #024e2e9c;
+  color:white;
 }
 .list_container{
   position: relative;
@@ -53,7 +64,40 @@ margin: 25px;
   margin: 20px;
 }
 
+
 #home_button:hover{
   background: #024e2e9c;
   color:white;
+}
+
+@media screen and (max-width: 480px) {
+  .wishlist_form_container{
+    width: 80%;
+  }
+  .list_container{
+    width: 80%;
+  }
+  #delete{
+    margin-top: 0.5px;
+  }
+  .list_container li{
+    text-align: left;
+  }
+  li a{
+    margin-left: 15px;
+  }
+  #add_wishlist{
+    margin: 0;
+    margin-top: 15px;
+  }
+}
+
+@media screen and (max-width: 330px) {
+  .wishlist_input_container{
+    width: 65%;
+  }
+  .list_container li{
+    font-size: 14px;
+    height: 20px;
+  }
 }

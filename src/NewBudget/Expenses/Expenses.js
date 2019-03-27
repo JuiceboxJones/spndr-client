@@ -27,8 +27,8 @@ componentDidMount(){
     const addExpense = {
       name: e.target.name.value,
       amount: e.target.amount.value };
-    ApiService.postExpenses(addExpense);
-    this.setState({ expenses: [...this.state.expenses, addExpense] });
+    ApiService.postExpenses(addExpense).then(exp => 
+    {this.setState({ expenses: [...this.state.expenses, exp] });})
     e.target.reset();
     e.target.name.focus()
   };
