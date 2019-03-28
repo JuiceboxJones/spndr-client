@@ -70,9 +70,9 @@ componentDidMount(){
       <div className='form_container'>
         <form className="current_expenses" onSubmit={e => this.handleAddExpense(e)}>
         <div className="current_monthly_expenses">
-          <label htmlFor="current_expense_name">Expense name</label>
+          <label htmlFor="current_name">Expense name</label>
           <input type="text" required name="name" id="current_name" />
-          <label htmlFor="current_expense_amount">Amount</label>
+          <label htmlFor="current_amount">Amount</label>
           <input type="number" step='0.01' required name="amount" id="current_amount" />
           <button id='add_expense' type="submit">Add Expense</button>
         </div>

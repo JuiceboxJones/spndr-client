@@ -103,9 +103,9 @@ class Home extends Component {
         <div className='input_container'>
         <form className='demo_expenses' onSubmit={(e) => this.handleAddExpense(e)}>
           <div className="demo_monthly_expenses">
-            <label htmlFor="demo_expense_name">Expense name</label>
+            <label htmlFor="demo_name">Expense name</label>
             <input type='text' required name="name" id="demo_name" placeholder='e.g. "Rent"' />
-            <label htmlFor="demo_expense_amount">Amount</label>
+            <label htmlFor="demo_amount">Amount</label>
             <input type='number' required name="amount" id="demo_amount" placeholder='$1500.00' />
             <button type='submit' id='expense_button'>Add Expense</button>
             <ul>
@@ -115,9 +115,9 @@ class Home extends Component {
           </form>
         <form className="demo_income" onSubmit={(e) => this.handleSubmitDemo(e)}>
           <div className="income_section">
-            <label htmlFor="demoPage_income">Monthly Income</label>
+            <label htmlFor="demo_income">Monthly Income</label>
             <input type='number' required name="income" id="demo_income" placeholder='$4000.00' />
-            <label htmlFor="demoPage_savings">Amount to add to savings</label>
+            <label htmlFor="demo_savings">Amount to add to savings</label>
             <input type='number' required name="savings" id="demo_savings" placeholder='$150.00' />
           </div>
           <button type="submit" id='spend_button'>How much can I spend</button>

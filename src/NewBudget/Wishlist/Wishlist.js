@@ -93,13 +93,13 @@ class Wishlist extends Component {
         <form className="wishlist_form" onSubmit={e => this.handleAddToWishlist(e)}
         >
           <div className='wishlist_input_container'>
-          <label htmlFor=''>Item:</label> 
+          <label htmlFor='item_name'>Item:</label> 
           <input type="text" required name="item_name" id="item_name" placeholder="e.g. 'New Car'"
           />
-          <label htmlFor=''>URL:</label> 
+          <label htmlFor='item_url'>URL:</label> 
           <input type="text" required name="item_url" id="item_url" placeholder="www.buyItHere.com"
           />
-          <label htmlFor=''>Price:</label> 
+          <label htmlFor='item_price'>Price:</label> 
           <input type="number" step='0.01' required name="item_price" id="item_price" placeholder="100.00"
           />
           <button type="submit" id='add_wishlist'>Add to Wishlist</button>

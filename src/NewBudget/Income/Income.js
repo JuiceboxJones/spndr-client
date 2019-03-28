@@ -79,13 +79,13 @@ class Income extends Component {
         <form className="income" onSubmit={(e) => this.handleSubmitIncome(e)}>
           <div className="income_section">
             <h2>New Income:</h2>
-            <label htmlFor='user_balance'>Current account balance</label>
+            <label htmlFor='balance'>Current account balance</label>
             <p/>
             <input type='number' step='0.01' name='balance' id='balance' />
-            <label htmlFor="user_income">Monthly Income</label>
+            <label htmlFor="income">Monthly Income</label>
             <p/>
             <input type='number' step='0.01' required name="income" id="income" />
-            <label htmlFor="user_savings">Amount to add to savings</label>
+            <label htmlFor="savings">Amount to add to savings</label>
             <p/>
             <input type='number' step='0.01' required name="savings" id="savings" />
           </div>
