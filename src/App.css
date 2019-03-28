@@ -82,10 +82,37 @@ html{
 }
 
 .registration_container label{
-  border: 1px solid black;
   display: inline-block;
   text-align: right;
+  margin: 10px;
   
+}
+
+.registration_container input{
+  margin: 5px;
+}
+
+.registrationForm{
+  width: 50%;
+  margin: 0 auto;
+}
+#register_button{
+  margin: 10px 0 20px 0;
+  border: none;
+  width: 150px;
+  height: 25px;
+  border-radius: 5px;
+  background:#A7C4C0;
+  cursor: pointer;
+  font-weight: bold;
+}
+#register_button:hover{
+  background: #024e2e9c;
+  color:white;
+}
+.registration_input_container{
+  width: 50%;
+  margin: 0 auto;
 }
 
 /* for summary page */

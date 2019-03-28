@@ -40,8 +40,8 @@ class Wishlist extends Component {
       url: e.target.item_url.value,
       price: e.target.item_price.value
     };
-    ApiService.postWishlist(item);
-    this.setState({ wishlist: [...this.state.wishlist, item] });
+    ApiService.postWishlist(item).then(item => {
+      this.setState({ wishlist: [...this.state.wishlist, item] });});
     e.target.reset();
     e.target.item_name.focus()
   };

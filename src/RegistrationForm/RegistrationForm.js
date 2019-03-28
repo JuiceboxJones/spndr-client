@@ -33,6 +33,7 @@ export default class RegistrationForm extends Component {
 		return (
 			<form className="RegistrationForm" onSubmit={this.handleSubmit}>
 				<div role="alert">{error && <p className="red">{error}</p>}</div>
+        <div className='registration_input_container'>
 				<div className="full_name">
 					<label htmlFor="RegistrationForm__full_name">
 						Full name
@@ -65,8 +66,9 @@ export default class RegistrationForm extends Component {
 						required
 						id="RegistrationForm__password"
 					/>
+          </div>
 				</div>
-				<button type="submit">Register</button>
+				<button type="submit" id='register_button'>Register</button>
 			</form>
 		);
 	}
