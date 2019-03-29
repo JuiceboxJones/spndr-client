@@ -52,14 +52,14 @@ class Summary extends Component {
     const subBal =
       Number(inc.bank_balance) + Number(inc.income) - Number(inc.add_savings);
     const accountBal = (subBal - this.state.expenseTotal).toFixed(2);
-    this.setState({ accountBal }, () => this.handleWishlistPurchase());
+    this.setState({ accountBal });
   }
 
   handleWishlistPurchase(price) {
-    if (price < this.state.accountBal) {
+    if (price < Number(this.state.accountBal)) {
       return 'Now';
     }
-    if (price > this.state.accountBal) {
+    if (price > Number(this.state.accountBal)) {
       const monthlyInc = Number(this.state.income[0].income);
       const total = Math.round(price / monthlyInc);
       return total + ' Months';
