@@ -171,8 +171,8 @@
     font-size: 15px;
   }
   #logout_button{
-    top: 90px;
-    right: 86px;
+    top: 13%;
+    right: 29%;
   }
   .wishlist_window li{
     font-size: 15px;
@@ -203,5 +203,35 @@
     margin-right: -8px;
     margin-top: 0px;
   }
+  #logout_button{
+    top: 16%;
+    right: 26%;
+  }
 }
+
+@media screen and (width: 360px){
+  #logout_button {
+    top: 14%;
+    right: 25%;
+  }
+}
+@media screen and (width: 411px){
+  #logout_button {
+    top: 11%;
+    right: 29%;
+  }
+}
+@media screen and (width: 375px){
+  #logout_button {
+    top: 14%;
+    right: 27%;
+  }
+}
+@media screen and (height: 812px){
+  #logout_button {
+    top: 11%;
+    right: 27%;
+  }
+}
+
 

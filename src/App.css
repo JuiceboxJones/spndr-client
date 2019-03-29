@@ -45,15 +45,12 @@ body{
   background: #A2BFBB;
   height: 300px;
   width: 100vw;
-  
- 
+
 }
 html{
   background: #E3E3E3;
   padding-bottom: 12px;
 }
-
-
 
 .header h1{
   margin: 0;
@@ -63,62 +60,6 @@ html{
   padding-top: 20px;
 }
 
-/* for registration page */
-
-.registration_container{
-  width: 33%;
-  margin: 0 auto;
-  margin-top: 10%;
-  border-radius: 8px;
-  background: #f5f5f5a3;
-}
-
-.registration_container h2{
-  background: #ffffff91;;
-  height: 32px;
-  margin: 0;
-  padding: 10px;
-  border-radius: 8px 8px 0 0;
-}
-
-.registration_container label{
-  display: inline-block;
-  text-align: right;
-  margin: 10px;
-  
-}
-
-.registration_container input{
-  margin: 5px;
-}
-
-.registrationForm{
-  width: 50%;
-  margin: 0 auto;
-}
-#register_button{
-  margin: 10px 0 20px 0;
-  border: none;
-  width: 150px;
-  height: 25px;
-  border-radius: 5px;
-  background:#A7C4C0;
-  cursor: pointer;
-  font-weight: bold;
-}
-#register_button:hover{
-  background: #024e2e9c;
-  color:white;
-}
-.registration_input_container{
-  width: 50%;
-  margin: 0 auto;
-}
-
-/* for summary page */
-
-
-
 @media screen and (max-width: 480px) {
   .App{
     width: 70%;
@@ -126,11 +67,4 @@ html{
   label{
     margin: 15px;
   }
- 
 }
-
-@media screen and (max-width: 330px){
-  
-  
-}
-
