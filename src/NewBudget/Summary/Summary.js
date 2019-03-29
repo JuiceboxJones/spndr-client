@@ -62,7 +62,7 @@ class Summary extends Component {
     if (price > Number(this.state.accountBal)) {
       const monthlyInc = Number(this.state.income[0].income);
       const total = Math.round(price / monthlyInc);
-      return total + ' Months';
+      return total + ' Month(s)';
     }
   }
 
