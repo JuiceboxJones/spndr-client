@@ -45,7 +45,7 @@ class Income extends Component {
   handlePreviousIncome = () => {
     const income = this.state.previousIncome;
     if (income === null || income.length < 1) {
-      return <div>Let's Get Started! Step 1 of 3</div>;
+      return <div>Let's Get Started!</div>;
     } else {
       const inc = this.state.previousIncome[0];
       return (
@@ -74,7 +74,7 @@ class Income extends Component {
       <div className="income_page_container">
         <header id="header">
           <h2>Add Income</h2>
-          <p>Step 2 of 3</p>
+          <p>Step 1 of 3</p>
         </header>
         <div className="form_box">
           <div className="previous_income">{this.handlePreviousIncome()}</div>
