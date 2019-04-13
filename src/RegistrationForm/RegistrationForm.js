@@ -1,6 +1,7 @@
 import React, { Component } from 'react';
 import AuthApiService from '../services/auth-api-service';
 
+
 export default class RegistrationForm extends Component {
   static defaultProps = {
     onRegistrationSuccess: () => {}
@@ -31,7 +32,7 @@ export default class RegistrationForm extends Component {
   render() {
     const { error } = this.state;
     return (
-      <form className="RegistrationForm" onSubmit={this.handleSubmit}>
+      <form className="RegistrationForm" onSubmit={(e) => this.handleSubmit(e)}>
         <div role="alert">{error && <p className="red">{error}</p>}</div>
         <div className="registration_input_container">
           <div className="full_name">

@@ -24,6 +24,9 @@ export default class LoginPage extends Component {
         <div className="login_container">
           <section className="LoginPage">
             <h2>Login</h2>
+            <p>Demo Credentials</p>
+            <p>Username: Test123</p>
+            <p>Password: Password1!</p>
             <LoginForm onLoginSuccess={this.handleLoginSuccess} />
           </section>
         </div>

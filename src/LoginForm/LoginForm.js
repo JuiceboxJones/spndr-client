@@ -1,6 +1,7 @@
 import React, { Component } from 'react';
 import TokenService from '../services/token-service';
 import AuthApiService from '../services/auth-api-service';
+import { Link } from 'react-router-dom';
 
 export default class LoginForm extends Component {
   static defaultProps = {
@@ -27,7 +28,6 @@ export default class LoginForm extends Component {
     e.preventDefault();
     this.setState({ error: null });
     const { user_name, password } = e.target;
-
     AuthApiService.postLogin({
       user_name: user_name.value,
       password: password.value
@@ -66,6 +66,8 @@ export default class LoginForm extends Component {
         <button type="submit" id="login_form_button">
           Login
         </button>
+        <p/> 
+        <Link to='/register'>Not a member? Register here.</Link>
       </form>
     );
   }

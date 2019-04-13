@@ -136,7 +136,7 @@ class Welcome extends Component {
             id="new_budget_button"
             onClick={() => this.handleButtonNav('/income')}
           >
-            New Budget
+            Edit Budget
           </button>
         </div>
         <div className="wishlist_window">

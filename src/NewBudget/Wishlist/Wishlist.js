@@ -134,10 +134,10 @@ class Wishlist extends Component {
               <label htmlFor="item_url">URL:</label>
               <input
                 type="text"
-                required
                 name="item_url"
                 id="item_url"
-                placeholder="www.buyItHere.com"
+                pattern="http://.*"
+                placeholder="http:// prefix required"
               />
               <label htmlFor="item_price">Price:</label>
               <input
