@@ -7,8 +7,26 @@ SPNDR also incorporates a wishlist feature that allows you to add items you wish
 will be able to afford the items you have listed. You can register to have access to that feature as well as the added benefit 
 of having saved previous monthly expenses so that you don't have to enter them every time you want to create a new budget estimate.
 
+
+## Tech Stack
+
 Technologies used in the construction of this app: React, CSS3, HTML5, PostgreSQL, Node, Express
 
+## Features
+
+Login with the ability to save your information.
+Add items with links to your wishlist.
+Calculate the time it will take to afford items on your wishlist.
+Add expenses to your profile with the ability to edit them as your finances change.
+A summary read-out that returns all the information you've provided along with your spending budget.
+
+## API Reference
+
+View my server at - https://infinite-gorge-60127.herokuapp.com
+
+
+
+## Screenshots
 
 This is the demostration page. This page has limited features and will not save user information.
 It will give you a general idea of what the app is capable of without having to register.

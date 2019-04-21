@@ -66,9 +66,9 @@ class Home extends Component {
   }
 
   render() {
-    const handleList = this.state.expenses.map(exp => {
+    const handleList = this.state.expenses.map((exp, index) => {
       return (
-        <li key={exp.id}>
+        <li key={exp.id || index}>
           {exp.name}: ${exp.amount}
           <p />
         </li>
